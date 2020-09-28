@@ -4,7 +4,7 @@ CompのExtensionsの使い方についての解説
 
 ## Extensionsとは
 <a href="https://www.derivative.ca/wiki099/index.php?title=Extensions">公式ドキュメント</a>
-**めっちゃ簡単に言うと、**Componentに変数や関数などを拡張するためのものです。
+**めっちゃ簡単に言うと、** Componentに変数や関数などを拡張するためのものです。
 CompのCustom Parametersだけでは足りなく、機能を拡張したいときに使うことができます。
 パラメーターのみを追加したい場合は<a href="https://qiita.com/kodai100/items/0dea9936bc6204012781">こちらの記事がオススメ</a>
 
@@ -27,7 +27,6 @@ Extensions1に TestExt と入れAddします。
 <img src="https://qiita-image-store.s3.amazonaws.com/0/175399/1e8fee0e-1298-6764-a967-1427869ad8f3.png">
 
 これでExtensionsを使う準備ができました！
-
 
 ### attribute
 ```
@@ -63,13 +62,11 @@ def PromotedFunction(self, v):
 関数もこのように定義できます。
 
 
-# #Promote
+## Promote
 変数名、関数名の頭文字が大文字であると、それはPromotedとなるんです(なんて訳すべきかわかりません！)。
 Promotedであるかないかでアクセスの仕方が変わります。
 publicやprivateみたいな感じです。
 ExtensionsタブのExtension NameとPromote Extensionという値が重要となります。
-
-
 
 ## Extensionsへのアクセス方法
 + ExtensionsタブのPromote ExtensionがONの場合
@@ -95,7 +92,6 @@ OFF時にデータにアクセスしたいときは、まずExtensionsタブのE
 <img src="https://qiita-image-store.s3.amazonaws.com/0/175399/9f36d0f8-7fa9-ce07-8141-74f2e829ffa4.png">
 ※Extensionsタブの値を変えたら必ずRe-Init Extensionsのボタンを押すこと
 <img src="https://qiita-image-store.s3.amazonaws.com/0/175399/e439b8e5-aa34-183d-3fc8-2de7587fc0c3.png">
-
 
 ```
 op('container1').ext.TestNameExt.B
